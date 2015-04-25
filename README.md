@@ -1,13 +1,19 @@
 # SBMLDock
-
 This is a dockerfile that builds a docker image that will allow you to run
 	several SBML tools developed at The University of South Dakota.
 
 ## Info
 The are several tools you can run from command line using the final docker
-	image.  Check the Tools section for the tool list and commands to
-	run them.  We are also providing some test data to run them on,
-	but you can use your own data as well.
+	image.  Check the Tools section for information on each tool in the 
+	list and commands to run them.  We are also providing some test data
+	to run them on,	but you can use your own data as well.
+#### Tools List
+-------------------------------------------------------------------------------
+	1. ParaABioS
+	2. SBMLChecker
+	3. SBMLCompare
+	4. SBMLSplit
+	5. SBMLAnnotate
 
 ## Build the image
 You need the Docker daemon installed on your system to use this.  Please see
@@ -15,7 +21,7 @@ You need the Docker daemon installed on your system to use this.  Please see
 	daemon on your system.
 
 When you have the docker daemon installed, you can build the image with this
-	command.  Make sure to navigate to the directory where you clone this
+	command.  Make sure to navigate to the directory where you cloned this
 	this repo first.  Depending on your system, you may need to use 'sudo'
 	to issue docker commands.
 
@@ -32,6 +38,7 @@ There is test data for each tool, and you also want to map folders into your
 	to be aware of is that files will be owned by root when they come back
 	out of the container.
 ### ParaABioS
+-------------------------------------------------------------------------------
 There is test data in the /opt/ParaABioS/ folder to test the tool on.  To
 	execute ParaABioS you want to do `ParaABioS <inputfile1> <inputfile2> <distance> <ratio>`.
 	Assuming the image was named sbmldock and you have a folder to mount
@@ -49,6 +56,7 @@ If you have your own files you wish to run the tool on, make sure to place
 	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock ParaABioS file1.txt file2.txt 6 0.7
 
 ### SBMLChecker
+-------------------------------------------------------------------------------
 There is test data in the /opt/SBMLChecker/ folder to test the tool with. To
 	execute SBMLChecker you want to use `SBMLChecker <inputfile>`.
 	Assuming the image was named sbmldock and you have a folder to mount
@@ -65,6 +73,7 @@ There will be information printed to the screen and there will be the error
 	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLChecker one.xml
 
 ### SBMLCompare
+-------------------------------------------------------------------------------
 There is test data in the /opt/SBMLCompare/ folder to test the tool with. To
 	execute SBMLCompare you want to use `SBMLCompare <inputfile1> <inputfile2>`.
 	Assuming the image was named sbmldock and you have a folder to mount
@@ -82,6 +91,7 @@ This will print a bunch of text to screen and there will be an excel file
 	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLCompare one.xml two.xml
 
 ### SBMLSplit
+-------------------------------------------------------------------------------
 There is test data in the /opt/SBMLSplit/ folder to test the tool with. To
 	execute SBMLSplit you want to use `SBMLSplit <flag> <inputfile>` where
 	your flag is `C` or `R`and the file is the file you want to split.
@@ -99,6 +109,7 @@ This will print out some information to the screen and in your mount folder you
 	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLSplit C one.xml
 
 ### SBMLAnnotate
+-------------------------------------------------------------------------------
 There is test data in the /opt/SBMLAnnotate/ folder to test the tool with. To
 	execute SBMLAnnotate you want to use `SBMLAnnotate <inputfile> <outputfile>`.
 	Assuming the image was names sbmldock and you have a folder to mount
