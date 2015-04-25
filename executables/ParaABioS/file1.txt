@@ -1,0 +1,33 @@
+dihydrofolate free
+dihydrofolate bound
+dihydrofolate reductase free
+dihydrofolate reductase total
+tetrahydrofolate
+5,10-methylene-tetrahydrofolate
+5-methyl-tetrahydrofolate
+10-formyl-tetrahydrofolate
+10-formyl-dihydrofolate
+HCHO
+FGAR
+AICAR
+MTX1
+MTX2
+MTX3
+MTX4
+MTX5
+MTX1b
+MTX2b
+MTX3b
+MTX4b
+MTX5b
+EMTX
+dUMP
+GAR
+serine
+formate
+ATP
+glutamine
+glycine
+NADP
+NADPH
+homocysteine
