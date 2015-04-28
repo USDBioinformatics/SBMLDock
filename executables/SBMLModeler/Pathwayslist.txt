@@ -1,0 +1,135 @@
+apoptosis
+urea cycle
+axon guidance
+bile secretion
+photosynthesis
+protein export
+kennedy pathway
+dna replication
+sulfur metabolism
+purine metabolism
+biotin metabolism
+xylene degradation
+retinol metabolism
+dioxin degradation
+lysine degradation
+methane metabolism
+zeatin biosynthesis
+folate biosynthesis
+thiamine metabolism
+toluene degradation
+tyrosine metabolism
+styrene degradation
+pyruvate metabolism
+lysine biosynthesis
+nitrogen metabolism
+steroid degradation
+histidine metabolism
+geraniol degradation
+galactose metabolism
+atrazine degradation
+benzoate degradation
+butanoate metabolism
+d-alanine metabolism
+steroid biosynthesis
+polyamine metabolism
+glycolysis classical
+riboflavin metabolism
+n-glycan biosynthesis
+vitamin b6 metabolism
+bisphenol degradation
+fatty acid metabolism
+fatty acid elongation
+pyrimidine metabolism
+tryptophan metabolism
+betalain biosynthesis
+propanoate metabolism
+ether lipid metabolism
+mapk signaling pathway
+glutathione metabolism
+flavonoid biosynthesis
+sphingolipid metabolism
+novobiocin biosynthesis
+caprolactam degradation
+fatty acid biosynthesis
+carotenoid biosynthesis
+beta-alanine metabolism
+glycerolipid metabolism
+anthocyanin biosynthesis
+other glycan degradation
+diterpenoid biosynthesis
+linoleic acid metabolism
+phenylalanine metabolism
+citrate cycle (tca cycle)
+oxidative phosphorylation
+one carbon pool by folate
+calcium signaling pathway
+streptomycin biosynthesis
+selenocompound metabolism
+aminobenzoate degradation
+isoflavonoid biosynthesis
+insulin signaling pathway
+tetracycline biosynthesis
+pentose phosphate pathway
+jak-stat signaling pathway
+cyanoamino acid metabolism
+fluorobenzoate degradation
+peptidoglycan biosynthesis
+glucosinolate biosynthesis
+glycolysis/gluconeogenesis
+arachidonic acid metabolism
+aminoacyl-trna biosynthesis
+indole alkaloid biosynthesis
+steroid hormone biosynthesis
+phenylpropanoid biosynthesis
+starch and sucrose metabolism
+inositol phosphate metabolism
+primary bile acid biosynthesis
+glycerophospholipid metabolism
+fructose and mannose metabolism
+drug metabolism - other enzymes
+arginine and proline metabolism
+lipopolysaccharide biosynthesis
+terpenoid backbone biosynthesis
+phosphotransferase system (pts)
+pantothenate and coa biosynthesis
+ascorbate and aldarate metabolism
+drug metabolism - cytochrome p450
+flavone and flavonol biosynthesis
+taurine and hypotaurine metabolism
+cysteine and methionine metabolism
+isoquinoline alkaloid biosynthesis
+polyketide sugar unit biosynthesis
+c5-branched dibasic acid metabolism
+complement and coagulation cascades
+butirosin and neomycin biosynthesis
+porphyrin and chlorophyll metabolism
+d-arginine and d-ornithine metabolism
+phosphatidylinositol signaling system
+d-glutamine and d-glutamate metabolism
+nicotinate and nicotinamide metabolism
+phosphonate and phosphinate metabolism
+glyoxylate and dicarboxylate metabolism
+carbon fixation pathways in prokaryotes
+biosynthesis of unsaturated fatty acids
+glycine, serine and threonine metabolism
+pentose and glucuronate interconversions
+erythropoietin-mediated signaling pathway
+chloroalkane and chloroalkene degradation
+penicillin and cephalosporin biosynthesis
+synthesis and degradation of ketone bodies
+valine, leucine and isoleucine degradation
+alanine, aspartate and glutamate metabolism
+amino sugar and nucleotide sugar metabolism
+valine, leucine and isoleucine biosynthesis
+carbon fixation in photosynthetic organisms
+biosynthesis of type ii polyketide products
+metabolism of xenobiotics by cytochrome p450
+sesquiterpenoid and triterpenoid biosynthesis
+chlorocyclohexane and chlorobenzene degradation
+ubiquinone and other terpenoid-quinone biosynthesis
+phenylalanine, tyrosine and tryptophan biosynthesis
+glycosaminoglycan biosynthesis - chondroitin sulfate
+stilbenoid, diarylheptanoid and gingerol biosynthesis
+tropane, piperidine and pyridine alkaloid biosynthesis
+biosynthesis of siderophore group nonribosomal peptides
