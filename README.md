@@ -12,8 +12,10 @@ The are several tools you can run from command line using the final docker
 	1. ParaABioS
 	2. SBMLChecker
 	3. SBMLCompare
-	4. SBMLSplit
-	5. SBMLAnnotate
+	4. SBMLMerge
+	5. SBMLSplit
+	6. SBMLModeler
+	7. SBMLAnnotate
 
 ## Build the image
 You need the Docker daemon installed on your system to use this.  Please see
@@ -90,6 +92,24 @@ This will print a bunch of text to screen and there will be an excel file
 
 	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLCompare one.xml two.xml
 
+### SBMLMerge
+-------------------------------------------------------------------------------
+There is test data in the /opt/SBMLMerge/ folder to test the tool with. To
+	execute SBMLMerge you want to use `SBMLMerge <edit distance int[0-10]> <similarity ratio float[0-1]> <inputfile1> <inputfile2> <optional input files up to 6>`
+	Assuming the image was named sbmldock and you have a folder to mount in
+	the image at /home/wjconn/SBMLDock/mount then you owuld use a command
+	line like this:
+
+	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLMerge 6 0.7 /opt/SBMLMerge/one.xml /opt/SBMLMerge/two.xml
+
+This will print a lot of info to the screen and you will get a mergedmodel.xml
+	file in your mounted directory.  To use your own data files, first put
+	them in the directory your going to mount in the container and then use
+	a command line similar to this:
+
+	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLMerge 6 0.7 one.xml two.xml
+
+
 ### SBMLSplit
 -------------------------------------------------------------------------------
 There is test data in the /opt/SBMLSplit/ folder to test the tool with. To
@@ -107,6 +127,25 @@ This will print out some information to the screen and in your mount folder you
 	and use a similar command line to this:
 
 	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLSplit C one.xml
+
+### SBMLModeler
+-------------------------------------------------------------------------------
+SBMLModeler pulls all the data it needs, but you need to supply the pathway.
+	For a list of pathways to use, please check the Pathwayslist.txt file
+	by using `cat /opt/SBMLModeler/Pathwayslist.txt`.  Assuming your
+	image is named sbmldock and you have a folder to mount in the image
+	at /home/wjconn/SBMLDock/mount then you would use a command line like
+	this to see the pathways:
+
+	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock cat /opt/SBMLModeler/Pathwayslist.txt
+
+Once you have your pathway picked out you can run SBMLModeler by using `SBMLModeler <Path to store file> <Pathway name>`.
+	It's best to simple store the files in the directory we are in so they
+	come back out of the container into the mount directory. So we will
+	run it with a command line like this:
+
+	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLModeler . "folate biosynthesis"
+
 
 ### SBMLAnnotate
 -------------------------------------------------------------------------------
