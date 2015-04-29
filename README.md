@@ -164,7 +164,7 @@ This will put the out.xml file in your mount directory after it's finished. To
 	use your own file with the tool, make sure it is in the mount directory
         and use a similar command line to this:
 
-        docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLAnnotate one.xml
+        docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLAnnotate one.xml out.xml
 
 ## Credits
 -------------------------------------------------------------------------------
