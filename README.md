@@ -30,15 +30,17 @@ When you have the docker daemon installed, you can build the image with this
 	docker build -t sbmldock .
 
 ## Tools
-There is test data for each tool, and you also want to map folders into your
-	docker runs so you can get the output back from the tools.  This is 
-	done by using `-v /host/folder:/container/folder` and we will also
-	tell it to run in the container's folder so that when the run is over
-	all your output files come back out for you to look at.  We will do
-	that with `-w /container/folder` noting it's the same place we are
+There is test data for each tool and you also want to map folders into your
+	running docker images so you can get the output back from the tools.
+	This is done by using `-v /host/folder:/container/folder` and we will
+	also tell it to run in the container's folder so that when the run is
+	over all your output files come back out for you to look at.  We will
+	do that with `-w /container/folder` noting it's the same place we are
 	mounting into.  See examples below for this in practice.  Another thing
 	to be aware of is that files will be owned by root when they come back
-	out of the container.
+	out of the container.  So you may need root privileges to work with
+	the output files.
+
 ### ParaABioS
 -------------------------------------------------------------------------------
 There is test data in the /opt/ParaABioS/ folder to test the tool on.  To
@@ -114,10 +116,10 @@ This will print a lot of info to the screen and you will get a mergedmodel.xml
 -------------------------------------------------------------------------------
 There is test data in the /opt/SBMLSplit/ folder to test the tool with. To
 	execute SBMLSplit you want to use `SBMLSplit <flag> <inputfile>` where
-	your flag is `C` or `R`and the file is the file you want to split.
-	Assuming the image was named sbmldock and you have a folder to mount
-	in the image at /home/wjconn/SBMLDock/mount then you would use a
-	command line like this:
+	your flag is `C` or `R` to split on Compound or Reaciton and the file
+	is the file you want to split. Assuming the image was named sbmldock
+	and you have a folder to mount in the image at /home/wjconn/SBMLDock/mount
+	then you would use a command line like this:
 
 	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLSplit C /opt/SBMLSplit/one.xml
 
@@ -152,7 +154,7 @@ Once you have your pathway picked out you can run SBMLModeler by using `SBMLMode
 -------------------------------------------------------------------------------
 There is test data in the /opt/SBMLAnnotate/ folder to test the tool with. To
 	execute SBMLAnnotate you want to use `SBMLAnnotate <inputfile> <outputfile>`.
-	Assuming the image was names sbmldock and you have a folder to mount
+	Assuming the image was named sbmldock and you have a folder to mount
 	in the image at /home/wjconn/SBMLDock/mount then you would use a
 	command line like this:
 
