@@ -130,11 +130,12 @@ This will print out some information to the screen and in your mount folder you
 
 ### SBMLModeler
 -------------------------------------------------------------------------------
-SBMLModeler pulls all the data it needs, but you need to supply the pathway.
-	For a list of pathways to use, please check the Pathwayslist.txt file
-	by using `cat /opt/SBMLModeler/Pathwayslist.txt`.  Assuming your
-	image is named sbmldock and you have a folder to mount in the image
-	at /home/wjconn/SBMLDock/mount then you would use a command line like
+SBMLModeler pulls data it needs from multiple sources on the internet but you
+	need to supply the pathway to the program on the command line. For a
+	list of pathways to use, please check the Pathwayslist.txt file	by
+	using `cat /opt/SBMLModeler/Pathwayslist.txt`.  Assuming your image is
+	named sbmldock and you have a folder to mount in the image at
+	/home/wjconn/SBMLDock/mount then you would use a command line like
 	this to see the pathways:
 
 	docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock cat /opt/SBMLModeler/Pathwayslist.txt
@@ -164,4 +165,6 @@ This will put the out.xml file in your mount directory after it's finished. To
         docker run -v /home/wjconn/SBMLDock/mount:/tmp -w /tmp sbmldock SBMLAnnotate one.xml
 
 ## Credits
+-------------------------------------------------------------------------------
+The University of South Dakota
 
